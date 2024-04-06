@@ -1,2 +1,2 @@
-# API-StarWars
-API de StarWars usando o Nodejs e MongoDB
+# API-Harry Potter
+API de Harry Potter usando o Nodejs e MongoDB
