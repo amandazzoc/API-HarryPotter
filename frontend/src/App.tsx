@@ -260,14 +260,14 @@ export default function App() {
 
       {showModal && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white rounded p-6 w-8/12 max-w-3xl relative">
+          <div className="bg-white rounded p-6 wd:w-8/12 w-11/12 max-w-3xl relative">
             <div className="flex justify-center mb-4">
               <h1 className="text-4xl font-medium text-black relative ">Edite o Filme<hr className="w-full mt-1 border-red-500" style={{ borderTopWidth: '4px' }} /></h1>
             </div>
             <form onSubmit={handleEditSubmit} className='flex flex-col'>
               <label className="font-medium text-black">Titulo:</label>
               <input
-                className='border-2 p-2 mb-5 rounded bg-slate-50'
+                className='border-2 p-2 md:mb-5 mb-1 rounded bg-slate-50'
                 type="text"
                 value={editedTitle}
                 onChange={(e) => setEditedTitle(e.target.value)}
@@ -275,7 +275,7 @@ export default function App() {
 
               <label className="font-medium text-black">Descrição:</label>
               <textarea
-                className="mb-5 p-2 rounded border-2 bg-slate-50"
+                className="md:mb-5 mb-1 p-2 rounded border-2 bg-slate-50"
                 rows={10} // Defina o número de linhas visíveis
                 value={editedDescription}
                 onChange={(e) => setEditedDescription(e.target.value)}
@@ -283,14 +283,14 @@ export default function App() {
 
               <label className="font-medium text-black">URL da capa:</label>
               <textarea
-                className="w-full mb-5 p-2 rounded border-2 bg-slate-50"
+                className="w-full md:mb-5 mb-2 p-2 rounded border-2 bg-slate-50"
                 value={editedImage}
                 onChange={(e) => setEditedImage(e.target.value)}
               />
 
               <label className="font-medium text-black">URL do trailer:</label>
               <input
-                className='border-2 p-2 mb-5 rounded bg-slate-50'
+                className='border-2 p-2 md:mb-5 mb-2 rounded bg-slate-50'
                 type="text"
                 value={editedTrailer}
                 onChange={(e) => setEditedTrailer(e.target.value)}
