@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'HarryPotter';
+    src: url('./fonts/HARRYP__.TTF') format('truetype');
+    /* Você pode adicionar outras variações da fonte aqui, como bold, italic, etc. */
+  }
+  
+.font-harrypotter{
+    font-family: 'HarryPotter', sans-serif;
+}
+*{
+    font-family: 'Fredoka';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar {
+    background: #fbbf24;
+}
+::-webkit-scrollbar-thumb{
+    background: #ef4444;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ec3030;
+    border-radius: 5px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "api-harrypotter",
+  "version": "1.0.0",
+  "description": "Harry potter API desenvolvida em nodejs com mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandazzoc/API-HarryPotter.git"
+  },
+  "author": "Amanda Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandazzoc/API-HarryPotter/issues"
+  },
+  "homepage": "https://github.com/amandazzoc/API-HarryPotter#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
