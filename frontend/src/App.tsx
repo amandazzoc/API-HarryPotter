@@ -129,9 +129,9 @@ export default function App() {
 
   return (
     <div className="w-full min-h-screen bg-amber-400 flex justify-center px-4">
-      <main className="my-10 w-full md:max-w-7xl bg-white p-10 rounded-xl drop-shadow-2xl">
+      <main className="my-10 w-full md:max-w-7xl bg-white md:p-10 p-3 rounded-xl drop-shadow-2xl">
         <div className="flex justify-center">
-          <h1 className="text-7xl font-medium text-black font-harrypotter relative ">Filmes Harry Potter<hr className="w-full mt-1 border-red-500" style={{ borderTopWidth: '4px' }} /></h1>
+          <h1 className="md:text-7xl text-4xl font-medium text-black font-harrypotter relative ">Filmes Harry Potter<hr className="w-full mt-1 border-red-500" style={{ borderTopWidth: '4px' }} /></h1>
         </div>
 
 
@@ -198,7 +198,7 @@ export default function App() {
 
         <section className="flex flex-col">
           {filteredCustomers.map((customer) => (
-            <article key={customer._id} className="w-full rounded p-6 relative hover:scale-105 duration-200 mb-10 border-2 mt-4 bg-slate-50">
+            <article key={customer._id} className="w-full rounded md:p-6 p-3 relative hover:scale-105 duration-200 mb-10 border-2 mt-4 bg-slate-50">
               {/* A imagem e a legenda está em colunas até chegar em 789px, a partir dai a imagem ficará lado a lado com titulo e descrição
               Igualmente para o espaço que só será colocado quando a tela estiver grande*/}
               <div className="flex flex-col md:flex-row md:space-x-10">
@@ -209,13 +209,13 @@ export default function App() {
                   </div>
                 )}
                 <div className="w-full md:w-2/3">
-                  <p className="text-4xl font-harrypotter"> {customer.title}</p>
+                  <p className="md:text-5xl text-3xl font-harrypotter"> {customer.title}</p>
                   <p className='text-base'><span className="font-bold">Descrição:</span> {customer.description}</p>
                   <button
-                    className="bg-green-500 text-white py-2 px-4 rounded mt-4 absolute md:-bottom-3 md:right-6 max-md:-top-6 max-md:left-6 flex items-center hover:scale-105 duration-200"
+                    className="bg-green-500 text-white py-1 md:py-2 md:px-5 px-3 rounded mt-4 absolute md:-bottom-3 md:right-6 max-md:-top-6 max-md:left-2 flex items-center hover:scale-105 duration-200"
                     onClick={() => handleToggleTrailer(customer._id)}
                   >
-                    <FaPlay className="mr-2" />{showTrailerId === customer._id ? "Ocultar Trailer" : "Ver Trailer"}
+                    <FaPlay className="mr-1" />{showTrailerId === customer._id ? "Ocultar Trailer" : "Ver Trailer"}
                   </button>
                 </div>
               </div>
@@ -227,7 +227,7 @@ export default function App() {
                 <div className="flex justify-center mt-5 mb-5 border-t-2 pt-5">
                   {customer.trailer_url && (
                     <iframe
-                      className='w-96 h-60'
+                      className='md:w-96 md:h-60'
                       src={customer.trailer_url}
                       title="YouTube video player"
                     ></iframe>
